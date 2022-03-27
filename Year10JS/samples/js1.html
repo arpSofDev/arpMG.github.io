@@ -1,0 +1,80 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>
+            My First JS Page
+        </title>
+
+        <style>
+            h1{
+                color:green;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+            body{
+                position: relative;
+            }
+            
+        </style>
+        <script>
+            function changeColor() {
+                document.bgColor = "red";
+
+                var h1 = document.getElementById('myH1');
+                h1.innerHTML = "Changed my Heading";
+                h1.style.color = "blue";
+
+                console.log("This is written to the console");
+            }
+            function move(direction){
+                //alert(direction);
+                
+                var h1 = document.getElementById('myH1');
+                var curLeftText = h1.style.left;
+                
+                var curLeftNum = 0;
+                
+                if(curLeftText.length == 0){
+                    curLeftNum = 0;
+                }else{
+                    curLeftNum = parseInt(curLeftText, 10);
+                }
+                
+                var curTopText = h1.style.top;
+                var curTopNum = 0;
+                if(curTopText.length == 0){
+                    curTopNum = 0;
+                }else{
+                    curTopNum = parseInt(curTopText, 10);
+                }
+                
+                switch(direction){
+                    case "left": 
+                        curLeftNum = curLeftNum - 10;
+                        h1.style.left = curLeftNum+"px";break;
+                    case "right": 
+                        curLeftNum = curLeftNum + 10;
+                        h1.style.left = curLeftNum+"px";break;
+                    case "up": 
+                        h1.style.top = "10px";break;
+                    case "down": h1.style.top = "100px";break;
+                }
+                
+            }
+        </script>
+    </head>
+    <!-- DONT PUT ANYTHING HERE -->
+    <body>
+            <h1 id='myH1'>JavaScript</h1>
+            <div class="clearfix"></div>
+            <button type="button" onclick="changeColor();">Click Me</button>
+            <p onclick="document.bgColor='white';">Change it back</p>	
+            <p onclick="document.write('Mwha Ha Ha!');">Change it ALL!</p>
+            <button type="button" onclick="move('left');">&#8592;</button>
+            <button type="button" onclick="move('up');">&#8593;</button>
+            <button type="button" onclick="move('down');">&#8595;</button>
+            <button type="button" onclick="move('right');">&#8594;</button>
+    </body>
+    <!-- DONT PUT ANYTHING HERE -->
+</html>

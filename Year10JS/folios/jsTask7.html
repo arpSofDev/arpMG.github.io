@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JS Folio - Task 7</title>
+	<link href="Year10JS.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>JavaScript Task Page <span><a href="..\index.php">Folio Home</a></span> </h1>
+		</div>
+		<div id="main">
+			<h2>Task 7 - Timing</h2>
+			<p>Javascript is able to control the timing of functions. There are 3 key ways to do this</p>
+			<dl>
+				<dt class="codeSnip">setTimer()</dt>
+				<dd>Delays the code for a specified time</dd>
+				<dt class="codeSnip">setInterval()</dt>
+				<dd>Continously calls a function a specified period of time apart</dd>
+				<dt class="codeSnip">requestAnimationFrame()</dt>
+				<dd>Similar to setInterval() but with more control</dd>
+			</dl>
+		</div>
+		<div id="task">
+			<p>Create a page that scrolls automatically through different images - ie create a carousel.</p>
+			<p>There are several strategies you can take to solve this problem.</p>
+			<dl>
+				<dt>What you CANT do...</dt>
+				<dd>Copy code from last year</dd>
+				<dd>Use examples that use JQuery or other frameworks</dd>
+				<dt>What you COULD do...</dt>
+				<dd>Name your images sequentially and use a loop counter as part of the filename</dd>
+				<dd>Use an <span class="codeSnip">IF</span> statement or a <span class="codeSnip">switch</span> statement on the counter to change the image name</dd>
+				<dd>Load the image names into an array and use the counter to select an item from the array (advanced)</dd>
+				<dd>Write a function to increment the array number and update the image displayed</dd>
+				<dd> - Use the setInterval() function to loop and call your image-swap function</dd>
+			</dl>
+
+			<p>Ensure you have the following:
+				<ul>
+					<li>A separate folder for your JS folio work</li>
+					<li>An images folder - make sure you rename any borrowed images to useful filenames</li>
+					<li>A lot of fun</li>
+				</ul>
+		</div>
+	</div>
+</body>
+
+</html>

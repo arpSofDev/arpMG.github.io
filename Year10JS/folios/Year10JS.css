@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15/03/2016, 9:32:17 PM
+    Author     : arp
+*/
+
+#container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header{
+	width: 100%;
+	height: 90px;
+	border: thick;
+	background-color: #9F0;
+}
+#main{
+	width: 100%;
+	background-color: #0FC;
+	float:left;
+}
+#task{
+	width: 100%;
+	background-color:#0FF;
+	float:left;
+}
+h1, h2, h3{
+	margin-top:0;
+	margin-bottom:0;
+	padding:20px;
+}
+h1 span{
+	font-size: normal;
+	float: right;
+}
+h1 span a{
+	color: white;
+}
+h4, p{
+	padding-left:20px;
+}
+.codeSnip {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+dl{
+	margin-left: 20px;	
+}
+dt{
+	padding-top: 10px;
+}
+dd.codeSnip{
+	padding-top: 10px;
+}

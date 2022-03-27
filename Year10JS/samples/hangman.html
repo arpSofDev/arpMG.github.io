@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Example Page</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/less" href="css/buttons.less" /> -->
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+
+    <!-- <script>less = { env: 'development'};</script> -->
+    <!-- <script src="js/less.js"></script> -->
+    <!-- <script>less.watch();</script> -->
+
+
+
+  </head>
+  <body>
+    <div class="container">
+      <nav class="btn-bar btn-dark">
+        <a href="#" class="btn btn-glass">
+          Default
+        </a>
+        <a href="#" class="btn btn-glass btn-primary">
+          <i class="fa fa-fw fa-lg fa-chevron-right"></i> Primary
+        </a>
+        <a href="#" class="btn btn-glass btn-success">
+          <i class="fa fa-fw fa-lg fa-check"></i> Success
+        </a>
+        <a href="#" class="btn btn-glass btn-warning">
+          <i class="fa fa-fw fa-lg fa-exclamation "></i> Warning
+        </a>
+        <a href="#" class="btn btn-glass btn-danger">
+          <i class="fa fa-fw fa-lg fa-times"></i> Danger
+        </a>
+        <a href="#" class="btn btn-glass btn-info">
+          <i class="fa fa-fw fa-lg fa-info "></i> Info
+        </a>
+      </nav>
+      <header>
+        <h1>JavaScript Hangman - You're gonna get it!</h1>
+      </header>
+      <main>
+        <section id="word-section">
+          <h2>Choose your word</h2>
+          <input type="text" id="word" value="testword">
+          <div class="shrink btn-dark">
+            <button class="btn btn-glass btn-success" type="button" onclick="selectWord();">Click to start the game</button>
+          </div>
+        </section>
+        <section id="guess-section">
+          <h2>Make your guess</h2>
+          <input type="text" id="guess" maxlength="1" pattern="[A-Za-z]{1}" title="Single letter only">
+          <div class="shrink btn-dark">
+            <button id="tryButton" class="btn btn-glass btn-success" type="button" onclick="makeGuess();">Try it</button>
+          </div>
+        </section>
+        <section id="solution-section">
+          <h2 class="soln">Solution</h2>
+          <h3 class="soln" id="solution"></h3>
+          <p class="soln"><small>Letters used so far:</small><br><span id="used"></span></p>
+        </section>
+        <section id="game-section">
+          <canvas id="canvas" width="300" height="300"></canvas>
+          <p><span id="guesses-left">10</span> guesses left</p>
+        </section>
+      </main>
+    </div>
+    <!-- The Modal w3schools -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="modal-close" class="close">&times;</span>
+          <h2 id="message-header"></h2>
+        </div>
+        <div class="modal-body">
+          <p id="message"></p>
+        </div>
+      </div>
+      <input type="hidden" id="re-focus" value="guess">
+
+    </div>
+    <script src="js/modal.js"></script>
+    <script src="js/hangmanDraw.js"></script>
+    <script src="js/hangmanGame.js"></script>
+    <script>
+    function showModal(header, message, timeToLive = 3000){
+      var hdr = document.getElementById('message-header');
+      hdr.innerHTML = header;
+      var msg = document.getElementById('message');
+      msg.innerHTML = message;
+
+      modal.style.display = "block";
+      if(timeToLive !== null){
+        setTimeout(closeModal, timeToLive);
+      }
+
+    }
+
+    </script>
+  </body>
+</html>

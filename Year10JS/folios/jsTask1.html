@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Year 10 JS - Task 1</title>
+	<link href="Year10JS.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+    	<h1>JavaScript Task Page <span><a href="..\index.php">Folio Home</a></span> </h1>
+    </div>
+    <div id="main">
+   	  <h2>Task 1 - Using the DOM</h2>
+        <p>The DOM is a heirarchical view of the web page, from the browser's point of view</p>
+        <p>Each page comes from a window object and branches down into</p>
+        <ul>
+        	<li onclick="document.getElementById('subList').style.display = 'none';document.getElementById('hey').style.display = 'block';">document</li>
+            <ul id="subList" visible="false">
+            	<li>forms</li>
+                <li>anchors</li>
+                <li>images</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="task">
+        <h3>JavaScript</h3>
+      		<p>Using JavaScript, we can access the elements of the page<br>Click on "document" to see what happens</p>
+        	<h4><span id='hey' style="display: none" onclick="document.getElementById('subList').style.display = 'block';document.getElementById('thanks').style.display = 'inline';">Hey, bring it back!</span>
+            	<span id="thanks" style="display: none"> - Thanks!!!</span>
+            </h4>
+		<h2>Activity - True or False</h2>
+        	<p>Create a page with 3 true/false questions.</p>
+            <ul>
+                <li>If the click on the correct answer, change the background colour to GREEN</li>
+                <li>If they click on an incorrect answer, change the background to red.</li>
+                <li>Extension.
+                    <ul>
+                        <li>Find a thumbs-up and a thumbs-down image</li>
+                        <li>For each question display the appropriate thumbs-up/thumbs-down image.</li>
+                    </ul>
+        		</li>
+	        </ul>
+            <h3>Focus</h3>
+            <p>Ensure you have the following:
+            <ul>
+            	<li>A separate site folder for your JS folio work</li>
+                <li>An images folder - make sure you rename any borrowed images to useful filenames</li>
+                <li>A lot of fun</li>
+            </ul>
+    </div>
+</div>
+
+</body>
+</html>

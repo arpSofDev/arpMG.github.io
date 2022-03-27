@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>
+            Add Two
+        </title>
+        <style>
+        h1{
+            color:green;
+        }
+		.super{
+			    vertical-align: super;
+				font-size: smaller;
+		}
+        </style>
+        <script>
+            function addTwo(num1, num2){
+                //var num1 = 10;
+                //var num2 = 7;
+                var sum = parseInt(num1) + parseInt(num2);
+                return sum;
+            }
+            function multiplyTwo(num1, num2){
+                //var num1 = 10;
+                //var num2 = 7;
+                var product = num1 * num2 ;
+                alert("Your product is " + product);
+            }
+            function anyTwo(){
+                var num1 = prompt("Enter your first number");
+                var num2 = prompt("Enter your second number");
+                
+                var added = addTwo(num1, num2);
+				alert(added);
+                //multiplyTwo(num1, num2);
+            }
+        </script>
+		
+	</head>
+	<!-- DONT PUT ANYTHING HERE -->
+	<body>
+		<h1>JavaScript Add<span class="super">2</span> Two</h1>
+                <button onclick="addTwo(10, 7);">Add Two</button>
+                <button onclick="multiplyTwo(10, 7);">Multiply Two</button>
+                
+                <button onclick="anyTwo();">Any Two</button>
+                
+		
+	</body>
+	<!-- DONT PUT ANYTHING HERE -->
+</html>

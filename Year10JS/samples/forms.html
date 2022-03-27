@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mod7</title>
+    </head>
+    <body>
+        <h1>Divisible by 7</h1>
+        <button onclick="divBy7();">Give me your number</button>
+        <button onclick="divBy7b();">Again</button>
+        <script>
+            function divBy7(){
+                
+                
+                var number = prompt("And the number is...");
+                var remainder = number % 7;
+                if(remainder == 0){
+					alert("Your number IS divisible by 7, " + (number/7) + " times");
+				}else{
+					alert("Your number IS NOT divisible by 7. It goes " + (Math.floor(number/7)) + " times with " + (number % 7) + " remainder");
+				}
+            }
+			
+			function divBy7b(){
+				document.body.style.backgroundColor = "blue";
+				var img = document.getElementById("thumb");
+				img.src = "images\thumbsup.jpg";
+			}
+            
+        </script>
+		<img id="thumb">
+    </body>                    
+</html>
