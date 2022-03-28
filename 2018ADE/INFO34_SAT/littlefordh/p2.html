@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Plastic Bags</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js" ></script>
+		<link href="stylesheet.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p1.html">The Issue</a>
+		        </li>
+						<li class="nav-item">
+							<a class="nav-link" href="p2.html">Plastic bags</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p3.html">Food Waste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p4.html">Landfill</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p5.html">Solution</a>
+		        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="landing">
+		<div class="landing">
+			<div class="home-wrap">
+					<div class="home-inner2">
+					</div>
+			</div>
+			</div>
+				<div class="caption center-block text-center">
+					<h3>Plastic Bags</h3>
+					<a class="btn btn-outline-light" href="#contents">Learn more</a>
+				</div>
+	</div>
+
+	<div id="contents">
+		<div class="row padding">
+
+			<div class="col-md-5">
+				<div class="chart-container" style="position:relative;">
+				<canvas id="Chart" class="Chart" width="400" height="400"></canvas>
+
+				<script>
+				const fCHART = document.getElementById("Chart");
+				var fChart = new Chart(fCHART, {
+					type: 'bar',
+					data: {
+							labels: ["No as I don't think it is an issue","Yes but I find it convenient and can't change","Yes and I want to change to stop using plastic bags"],
+							datasets: [{
+									label: 'Viewpoint of Plastic Bags',
+									data: [37,28,33,],
+									backgroundColor: [
+											'rgba(255, 99, 132, 1)',
+											'rgba(255, 206, 86, 1)',
+											'rgba(54, 162, 235, 1)',
+
+									],
+									borderWidth: 1
+
+							}]
+
+					},
+					options: {
+							scales: {
+
+									yAxes: [{
+											ticks: {
+													beginAtZero:true
+
+											}
+									}]
+
+							}
+					}
+
+				});
+
+				</script>
+
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+				<div class="col-md-5">
+					<h3 class="text-center mc">Awareness Of How Plastic Bags Impact In The Environment</h3>
+					<br>
+					<p>	When asked the question:<strong> <br>"Did you know that it is estimated that 500 billion single use plastic bags are used each year in the world?"<br>
+					</strong>63% of those surveyed acknowledge that they have no idea of the extent of plastic bags used.
+					<br>
+					<br> However, when asked:
+					<strong><br>"Are you concerned about the impact of single use plastic bags on the environment?" </strong><br>
+						49% of those surveyed responded yes, and want to change to stop using single use plastic bags.</p>
+
+			</div>
+			<div class="col-md-1">
+			</div>
+		</div>
+</div>
+<div id="long">
+</div>
+<div id="sec">
+			<div class="row padding">
+				<div class="col-md-1">
+				</div>
+			<div class="col-md-5">
+				<h3 class="mc">Regularity Of Customer Use</h3>
+				<ul>
+					<li>69% of the people surveyed use 1 to 5 plastic bags a week.</li>
+					<li>23% of those surveyed use 6 to 10 plastic bags a week</li>
+					<li>8% use 11 to 15 plastic  bags a week</li>
+				</ul>
+				<p>Even though only 8% of people use 11 to 15 plastic bags a week this is still a large number of plastic bags entering and harming the environment.</p>
+			</div>
+				<div class="col-md-5 text-center">
+					<div class="chart-container" style="position:relative;">
+					<canvas id="secChart" class="Chart"></canvas>
+
+					<script>
+					const secCHART = document.getElementById("secChart");
+					var secChart = new Chart(secCHART, {
+						type: 'line',
+						data: {
+								labels: ["1 to 5", "6 to 10", "11 to 15"],
+								datasets: [{
+										label: 'Amount of plastic bags people generally use a week',
+										data: [33,11,4],
+										backgroundColor: [
+												'rgba(255, 99, 132, 1)',
+										],
+										borderColor: [
+													'rgba(54, 162, 235, 1)',
+										],
+										borderWidth: 1
+
+								}]
+
+						},
+						options: {
+						},
+
+					});
+
+					</script>
+
+				</div>
+			</div>
+
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+	<h3 class="text-center"><a class="btn btn-outline-dark" href="#landing">Return to Top</a></h3>
+	</body>
+</html>

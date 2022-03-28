@@ -1,0 +1,90 @@
+.container{
+    width: 550px;
+}
+
+.main{
+    padding-top: 70px;
+}
+
+.login_main{
+    padding-top: 150px;
+}
+
+.register_main{
+    padding-top: 70px;
+}
+
+.driver_main{
+    padding-top: 80px;
+}
+
+.home_display{
+    padding-top: 50px;
+}
+
+.font-30{
+    font-size: 30px;
+}
+
+#margin-left{
+    margin-left: 20px;
+}
+
+/* icons */
+.fa-sign-out-alt {
+  color: #FFF;
+}
+
+.fa-home {
+  color: #FFF;
+}
+
+.fa-chart-line {
+  color: #FFF;
+}
+
+.fa-address-card{
+  color:#FFF;
+}
+
+.fa-arrow-left{
+  color:#000;
+  margin-bottom: 20px;
+}
+
+/* nav bar */
+.btn-group .btn {
+  border-radius: 0;
+  height: 80px;
+  width: 184px;
+  font-size: 18px;
+}
+
+/*circle progress bar*/
+.canvas-holder {
+    position: relative;
+    width: 300px;
+    float: left;
+    margin-top: -35px;
+}
+#canvas-data {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    left: 0 ;
+    font-size: 70px;
+    margin-top: -20px;
+    line-height: 300px;
+}
+
+#canvas-text{
+    position: absolute;
+    top: 0;
+    margin-top: 10;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 12px;
+    line-height: 300px;
+}

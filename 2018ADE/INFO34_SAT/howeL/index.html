@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Crime - Informatics 3,4 SAT</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="sources/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/mmos.min.css">
+
+    <!-- Custom fonts (sorry these won't work offline, but it's a multimodal ONLINE solution for a reason) -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
+    <link rel="stylesheet" href="sources/fonts/stylesheet.css">
+
+    <!-- Chart JS -->
+    <script src="sources/chart/chart.bundle.min.js"></script>
+
+  </head>
+  <body id="pageTop">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#pageTop">Crime</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#findings">Findings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#conclusion">Conclusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#references">References</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead" title="Melbourne Crime">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Crime in Victoria</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Does affluence affect criminal activity?</h2>
+          <a href="#research" class="btn btn-primary js-scroll-trigger">Discover More</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="research-section" id="research">
+      <div class="container text-white">
+        <div class="row text-center">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4">My Hypothesis</h2>
+            <p>Suburbs with higher-than-average income will experience <b>more crimes against property</b> than suburbs with lower-than-average income, but <b>less crimes overall</b>.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-white">
+            <h2 class="mb-4 text-center">Background Information</h2>
+            <p class="lead text-center">What is a crime against property?</p>
+            <p>Crimes against property are non-violent crimes which directly affect a person's property. They include:</p>
+            <ul>
+              <li>Arson,</li>
+              <li>Property damage,</li>
+              <li>Extortion,</li>
+              <li>Burglary,</li>
+              <li>Theft,</li>
+              <li>Fraud, and</li>
+              <li>Bribery.</li>
+            </ul>
+            <p>Crimes against property are referred to by the Crime Statistics Agency Victoria as Category B "Property and Deception" offences.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-white">
+            <h2 class="mb-4 text-center">Key Facts and Statistics</h2>
+              <p></p>
+              <br>
+              <p>
+                Crimes against property made up 59.23% of all crimes reported in 2017, an increase of 4.5% from 2016.
+                <br>
+                Factors such as unemployment and poverty are often associated with higher-than-average rates of crime.
+                <br>
+                Wealthier people are more likely to fall victims to scams and extortion.
+            </p>
+            <table class="table table-sm">
+              <thead>
+                <th scope="col"></th>
+                <th scope="col" class="text-right">Low-income areas</th>
+                <th scope="col" class="text-right">High-income areas</th>
+                <th scope="col" class="text-right">State average</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Overall Crimes Per 100,000</td>
+                  <td class="text-right">8,202</td>
+                  <td class="text-right">8,008</td>
+                  <td class="text-right">8,597</td>
+                </tr>
+                <tr>
+                  <td>Property Crimes Per 100,000</td>
+                  <td class="text-right">3,864</td>
+                  <td class="text-right">4,826</td>
+                  <td class="text-right">5,100</td>
+                </tr>
+                <tr>
+                  <td>Property Crimes (% of Overall)</td>
+                  <td class="text-right">47.17%</td>
+                  <td class="text-right">60.73%</td>
+                  <td class="text-right">59.23%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="blockquote-footer text-white-50">The above numeric data was collected from the <cite><a href="http://www.abs.gov.au/">Australian Bureau of Statistics</a></cite> and the <cite><a href="https://www.crimestatistics.vic.gov.au/">Crime Statistics Agency Victoria</a></cite> before being analysed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="findings-section" id="findings">
+      <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <div class="featured-text text-center text-white">
+              <h4>My Findings</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6 bg-black">
+            <!-- Chart 1 -->
+            <!-- <img class="img-fluid" src="img/chart_placeholder_2.png" alt="Correlation between median income and crimes against property"> -->
+            <div class="chart-container" title="The correlation between median income and crimes against property">
+              <canvas id="propertyIncome"></canvas>
+            </div>
+            <p class="blockquote-footer text-white-50 text-center">Figure 1: Income vs Crime Against Property</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 findings">
+              <div class="d-flex h-100">
+                <div class="findings-text w-100 my-auto text-center text-lg-left">
+                  <p class="mb-0 text-light align-middle">
+                    The data shown in Figure 1 indicates that, as income increases, the proportion of reported crimes that are crimes against property also increases.
+                    This indicates that there is a correlation between the wealth of a suburb and the types of crimes committed there.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6 bg-black">
+            <!-- Chart 2 -->
+            <!-- <img class="img-fluid" src="img/chart_placeholder_1.png" alt="Correlation between median income and total crime"> -->
+            <div class="chart-container" title="The lack of correlation between median income and total crime">
+              <canvas id="crimeIncome"></canvas>
+            </div>
+            <p class="blockquote-footer text-white-50 text-center">Figure 2: Income vs Overall Crime</p>
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 findings">
+              <div class="d-flex h-100">
+                <div class="findings-text w-100 my-auto text-center text-lg-right">
+                  <p class="mb-0 text-light align-middle">
+                    However, the data shown in Figure 2 suggests that the relationship between income and overall crime rates is less clear.
+                    Both lower- and higher-income suburbs experience similar rates of crime overall, while middle-income suburbs experience higher rates of crime, which is seemingly random rather than adhering to any sort of pattern.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-12">
+            <div class="bg-black text-center h-100 findings">
+              <div class="findings-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">What Does This Suggest?</h4>
+                <hr class="d-none d-lg-block mb-0 mr-0 float-right">
+                <p class="mb-0 text-light">
+                  The above findings indicate that income is not a major factor in crime rates.
+                  However, it is possible that income inequality in middle-income suburbs could lead to their increased rates of crime.
+                </p>
+                <p class="mb-0 text-light">
+                  In addition, these findings suggest that income does have a moderate impact on the types of crimes committed in different areas, with more crimes against property such as theft being committed in more affluent suburbs.
+                  This makes a great deal of sense, because simple logic dictates that it is better to steal from someone rich than someone poor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-12">
+            <div class="bg-black text-center h-100 findings">
+              <div class="findings-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Interview With A Detective</h4>
+                <hr id="left-hr" class="d-none d-lg-block mb-0 mr-0">
+                <p class="mb-0 text-light">
+                  In the course of my research, I conducted a brief in-person interview with a detective in the Victoria Police Fraud and Extortion Squad.
+                  This detective wished to remain anonymous, but was able to give some insights into the types of cases they have dealt with and their workload.
+                </p>
+                <p class="mb-0 text-light">
+                  This detective informed me that Fraud and Extortion Squad was being allocated increased resources to assist them in stopping crime, with their own workload increasing as a result.
+                  They were also able to inform me that most of their investigations took place in wealthier inner-city suburbs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conclusion-section" id="conclusion">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center text-white ">
+            <h1 class="mb-5">Conclusion</h1>
+            <p>
+              The data collected indicates that increased income does appear to lead to increased incidence of crimes against property.
+              <br>
+              However, there is not a significant enough correlation between the wealth of a suburb and the overall crime rate of that suburb to say that there is any relation between these two factors.
+              <br>
+              As such, it can be concluded that <b>the primary part of my hypothesis was supported</b>, while <b>the secondary part of my hypothesis was not</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ref-section bg-black" id="references">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="text-white">References</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Barns, G. (2014). Slashing welfare is a recipe for crime</h4>
+                <!-- <br>--><hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="http://www.abc.net.au/news/2014-05-15/barns-slashing-welfare-is-a-recipe-for-crime/5454950">View article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Crime - Measures of Australia's Progress, 2010</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="http://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1370.0~2010~Chapter~Crime%20in%20Australia%20(4.4.5)">Visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Elliott, J. (2015). Blog: The changing nature of crime</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="https://www.sbs.com.au/news/blog-the-changing-nature-of-crime">View article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Hosking, W. & Argoon, A. (2017). Victoria’s crime wave gets worse</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="http://www.heraldsun.com.au/news/law-order/victorian-crime-statistics-robberies-thefts-rise/news-story/83a165f9ce653374603f25f3317393f4?nk=e9af236dc4fc18650019e5c72221fec3-1526357729">Read article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Pinsker, J. (2014). Does Inequality Cause Crime? </h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="https://www.theatlantic.com/business/archive/2014/10/does-inequality-cause-crime/381748/">Read article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Plumer, B. (2010). Crime Conundrum</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="https://newrepublic.com/article/80316/relationship-poverty-crime-rates-economic-conditions">Read article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Census Data Search by geography - Australian Bureau of Statistics</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="http://www.abs.gov.au/websitedbs/D3310114.nsf/Home/2016%20search%20by%20geography">Visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0">Sitwell, F., & Primrose, D. (2009). The distribution of wealth in Australia</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="http://evatt.org.au/papers/distribution-wealth-australia.html">Visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; Lachlan Howe 2018
+        <br>
+        Credit to <a class="text-white" href="https://startbootstrap.com/template-overviews/grayscale/">Start Bootstrap</a> for website template and JavaScript
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="sources/jquery/jquery.min.js"></script>
+    <script src="sources/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="sources/jquery/easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/info.min.js"></script>
+
+    <!-- Charts -->
+    <script>
+      Chart.defaults.global.defaultFontColor = 'rgba(255,255,255,0.9)';
+      Chart.defaults.global.defaultFontFamily = 'Nunito';
+      Chart.defaults.global.defaultFontSize = 12;
+
+      let crimeIncome = document.getElementById('crimeIncome').getContext('2d');
+
+      let crimeChart = new Chart(crimeIncome, {
+        type: 'scatter',
+        data:{
+          datasets: [{
+            label: 'Low-Income Suburbs',
+            data: [{
+                x: 34394,
+                y: 9453
+            }, {
+                x: 35668,
+                y: 12338
+            }, {
+                x: 36286,
+                y: 5440
+            }, {
+                x: 36894,
+                y: 7492
+            }, {
+                x: 37017,
+                y: 2873
+            }, {
+                x: 37658,
+                y: 8688
+            }, {
+                x: 37880,
+                y: 6277
+            }, {
+                x: 38525,
+                y: 7159
+            }],
+            borderColor: 'rgba(180, 8, 8, 0.95)',
+            backgroundColor:'rgba(180, 8, 8, 0.6)',
+          }, {
+            label: 'Middle-Income Suburbs',
+            data: [{
+              x: 43286,
+              y: 8677
+            }, {
+              x: 43288,
+              y: 7503
+            }, {
+              x: 43307,
+              y: 18752
+            }, {
+              x: 43639,
+              y: 7915
+            }, {
+              x: 43906,
+              y: 9450
+            }, {
+              x: 43924,
+              y: 13054
+            }, {
+              x: 43977,
+              y: 11596
+            }, {
+              x: 44047,
+              y: 6075
+            }, {
+              x: 44228,
+              y: 10136
+            }],
+            borderColor: 'rgba(8, 8, 180, 0.95)',
+            backgroundColor: 'rgba(8, 8, 180, 0.6)',
+          }, {
+            label: 'High-Income Suburbs',
+            data: [{
+                x: 63295,
+                y: 12553
+            }, {
+                x: 61570,
+                y: 14397
+            }, {
+                x: 59969,
+                y: 9698
+            }, {
+                x: 56169,
+                y: 5031
+            }, {
+                x: 54623,
+                y: 4714
+            }, {
+                x: 52934,
+                y: 4267
+            }, {
+                x: 52730,
+                y: 5053
+            }, {
+                x: 51648,
+                y: 7687
+            }],
+            borderColor: 'rgba(8, 180, 8, 0.95)',
+            backgroundColor:'rgba(8, 180, 8, 0.6)',
+          }]
+        },
+        options:{
+          title:{
+            display: true,
+            text: 'Income vs Total Crime'
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales:{
+             xAxes:[{
+               display: true,
+               scaleLabel: {
+                 display: true,
+                 labelString: 'Median Income'
+               }
+             }],
+             yAxes:[{
+               display: true,
+               scaleLabel: {
+                 display: true,
+                 labelString: 'Crimes Per 100,000 People'
+               }
+             }]
+           }
+        }
+      });
+
+      let propertyIncome = document.getElementById('propertyIncome').getContext('2d');
+
+      let propertyChart = new Chart(propertyIncome, {
+        type: 'scatter',
+        data:{
+          datasets: [{
+            label: 'Low-Income Suburbs',
+            data: [{
+                x: 34394,
+                y: 39.19
+            }, {
+                x: 35668,
+                y: 54.79
+            }, {
+                x: 36286,
+                y: 51.34
+            }, {
+                x: 36894,
+                y: 44.42
+            }, {
+                x: 37017,
+                y: 43.02
+            }, {
+                x: 37658,
+                y: 58.91
+            }, {
+                x: 37880,
+                y: 45.55
+            }, {
+                x: 38525,
+                y: 36.74
+            }],
+            borderColor: 'rgba(180, 8, 8, 0.95)',
+            backgroundColor:'rgba(180, 8, 8, 0.6)',
+          }, {
+            label: 'Middle-Income Suburbs',
+            data: [{
+              x: 43286,
+              y: 43.99
+            }, {
+              x: 43288,
+              y: 59.52
+            }, {
+              x: 43307,
+              y: 44.16
+            }, {
+              x: 43639,
+              y: 49.55
+            }, {
+              x: 43906,
+              y: 51.34
+            }, {
+              x: 43924,
+              y: 43.95
+            }, {
+              x: 43977,
+              y: 60.05
+            }, {
+              x: 44047,
+              y: 69.24
+            }, {
+              x: 44228,
+              y: 47.36
+            }],
+            borderColor: 'rgba(8, 8, 180, 0.95)',
+            backgroundColor: 'rgba(8, 8, 180, 0.6)',
+          }, {
+            label: 'High-Income Suburbs',
+            data: [{
+                x: 63295,
+                y: 68.79
+            }, {
+                x: 61570,
+                y: 68.29
+            }, {
+                x: 59969,
+                y: 70.66
+            }, {
+                x: 56169,
+                y: 64.36
+            }, {
+                x: 54623,
+                y: 72.92
+            }, {
+                x: 52934,
+                y: 65.73
+            }, {
+                x: 52730,
+                y: 63.35
+            }, {
+                x: 51648,
+                y: 63.75
+            }],
+            borderColor: 'rgba(8, 180, 8, 0.95)',
+            backgroundColor:'rgba(8, 180, 8, 0.6)',
+          }]
+        },
+        options:{
+          title:{
+            display: true,
+            text: 'Income vs Crime Against Property'
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales:{
+             xAxes:[{
+               display: true,
+               scaleLabel: {
+                 display: true,
+                 labelString: 'Median Income'
+               }
+             }],
+             yAxes:[{
+               display: true,
+               scaleLabel: {
+                 display: true,
+                 labelString: 'Crimes Against Property (%)'
+               }
+             }]
+           }
+        }
+      });
+    </script>
+
+  </body>
+</html>

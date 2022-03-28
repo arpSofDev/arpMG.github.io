@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Informatics SAC - James Eustice</title>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+    <script src="vendors/js/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+
+          }
+
+        });
+      });
+    </script>
+
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <style>
+
+      /* @import url(https://fonts.googleapis.com/css?family=Ubuntu:700&subset=latin,latin-ext); */
+
+      a {
+        text-decoration: none;
+        color: #4f4f4f;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 18px 64px;
+        border: 1px solid #4f4f4f;
+        border-radius: 4px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 2.1em;
+        margin-top: 4%;
+      }
+
+      .button:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+      }
+
+      .button:after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background-color: #666666;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+      }
+
+      .button:hover {
+        color: #ffffff;
+        border: 1px solid #4f4f4f;
+      }
+
+      .button:hover:before {
+        top: -35%;
+        background-color: #666666;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+
+      .button:hover:after {
+        top: -45%;
+        background-color: #4f4f4f;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+
+    </style>
+
+  </head>
+
+  <body id="top">
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="#top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hypothesis">Hypothesis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="informationOne.html">Who drives cars?</a>
+                <a class="dropdown-item" href="informationTwo.html">Are they cost efficient?</a>
+                <a class="dropdown-item" href="informationThree.html">Are they environmental?</a>
+                <a class="dropdown-item" href="informationFour.html">What do we think?</a>
+                <a class="dropdown-item" href="informationFive.html">Which fuels?</a>
+                <a class="dropdown-item" href="informationSix.html">Would you switch?</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One -->
+            <div class="carousel-item active" style="background-image: url('images/homeImage.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Electrical Cars</h3>
+                <p>Are electrical cars the most fuel efficient cars?</p>
+              </div>
+            </div>
+            <!-- Slide Two -->
+            <div class="carousel-item" style="background-image: url('images/homeImageTwo.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Coal Energy</h3>
+                <p>What electrical effects could electrical cars have on Australia?</p>
+              </div>
+            </div>
+            <!-- Slide Three -->
+            <div class="carousel-item" style="background-image: url('images/homeImageThree.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Survey Results</h3>
+                <p>What opinions do Melburnians think about electrical cars?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start of container -->
+    <div class="container">
+
+      <div style="text-align:center;">
+        <a href="#hypothesis" class="button" style="text-decoration: none;">START</a>
+      </div>
+
+      <br>
+
+      <h1 id="hypothesis"></h1>
+
+      <br>
+
+      <!-- Hypothesis -->
+      <h1 class="my-4">HYPOTHESIS:</h1>
+
+      <hr>
+
+      <h1 class="my-4">If someone isn’t driving 200+ km a week, then an electrical fueled car will be more cost effective compared to other modes of transport.</h1>
+
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">Survey and statistics</h4>
+            <div class="card-body">
+              <p class="card-text">
+                A survey was used to gather data and collect information on peoples opinions. The survey was sent around various areas of social media and recieved 50+ results. All data was then collated and sorted to display different correlations.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="https://goo.gl/forms/FiZFGe91i7lwxEiC3" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">Sitings</h4>
+            <div class="card-body">
+              <p class="card-text">
+                Sites that were used to borrow or learn snipits of code. The sites listed all contributed to the development of this website.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="extras.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">Bibliography</h4>
+            <div class="card-body">
+              <p class="card-text">
+                A list of all resources used to gather secondary information. All the listed media and sites assisted with the validation and collectiong of data.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="extras.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <h1 id="research"></h1>
+
+      <br>
+
+      <h1 class="my-4">RESEARCH:</h1>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationOne.html"><img class="card-img-top" src="images/imageOne.webp" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationOne.html">Who drives cars?</a>
+              </h4>
+              <p class="card-text">
+                Cars are a huge part of our daily lives, but how many melbournians really drive cars? How often do they drive and for how far?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationTwo.html"><img class="card-img-top" src="images/imageTwo.webp" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationTwo.html">Are they cost efficient?</a>
+              </h4>
+              <p class="card-text">
+                People spend so much on fuel each month, but could an electrical car save you money? Are you using your money as efficiently as possible?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationThree.html"><img class="card-img-top" src="images/imageThree.jpg" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationThree.html">Are they environmental?</a>
+              </h4>
+              <p class="card-text">
+                A general thought about electrical cars are that they are environmentally friendly, but are they actually? Can they help our environment?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationFour.html"><img class="card-img-top" src="images/imageFour.jpg" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationFour.html">What do we think?</a>
+              </h4>
+              <p class="card-text">Melbourne hardly has any electrical cars, but what opinions does our community hold on electrical cars? Why don't we all buy electrical cars?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationFive.html"><img class="card-img-top" src="images/imageFive.webp" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationFive.html">Which fuels?</a>
+              </h4>
+              <p class="card-text">Cars use all different types of fuels, but which one is the most popular? What fuel is the best to use?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="informationSix.html"><img class="card-img-top" src="images/imageSix.jpg" height="200" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="informationSix.html">Would you switch?</a>
+              </h4>
+              <p class="card-text">Petrol cars are used everywhere, but who would switch? Who would change to a different type of car?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <h1 id="conclusion"></h1>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-6">
+
+          <h1 class="my-4">CONCLUSION:</h1>
+
+          <hr>
+
+          <p>
+            In conclusion, electric cars are more cost efficient and need to be more accessible to the public.
+            However, Australia need to get a much more environmentaly friendly way of producing energy first to create much less polution.
+            So, in relation to my hypothesis, an electric car would most likely be more cost efficient when driving less then 200km per week.
+          </p>
+          <p>Thank you for reading.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="images/endImage.jpg" alt="">
+        </div>
+      </div>
+
+      <br>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

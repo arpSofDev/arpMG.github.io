@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chart test</title>
+    <link rel="stylesheet" href="templates/infoSAT.css">
+    <script src="vendors/chartjs/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="chart">
+      <canvas id="myChart" width="1000" height="600">
+        <script>
+        var ctx = document.getElementById("myChart");
+          var mylineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                  label: 'short term memory scores over age',
+
+                    data: [{
+                        x: 0,
+                        y: 0
+                    }, {
+                        x: 6,
+                        y:65
+                    }, {
+                        x: 7,
+                        y: 67
+                    }, {
+                        x: 9,
+                        y: 70
+                    }, {
+                        x: 10,
+                        y: 79
+                    }, {
+                        x: 11,
+                        y: 85
+                    }, {
+                        x: 12,
+                        y: 88
+                    }, {
+                        x: 16,
+                        y: 88
+                    }, {
+                        x: 17,
+                        y: 83
+                    }, {
+                        x: 18,
+                        y: 90
+                    }, {
+                        x: 20,
+                        y: 90
+                    }, {
+                        x: 35,
+                        y: 79
+                    }, {
+                        x: 36,
+                        y: 84
+                    }, {
+                        x: 41,
+                        y: 82
+                    }, {
+                        x: 42,
+                        y: 82
+                    }, {
+                        x: 49,
+                        y: 80
+                    }, {
+                        x: 54,
+                        y: 77
+                    }, {
+                        x: 62,
+                        y: 77
+                    }, {
+                        x: 65,
+                        y: 66
+                    }, {
+                        x: 84,
+                        y: 61
+                    }, {
+                        x: 85,
+                        y: 54
+                    },
+
+                  ]
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        type: 'linear',
+                        position: 'bottom'
+                    }]
+                }
+            }
+        });
+
+        </script>
+      </canvas>
+      The trend showed that our short term memory peaks at around twenty and then slowly declines.
+      This is supported by my secondary research and the interview I conducted with a psychologist.
+    </div>
+  </body>
+</html>

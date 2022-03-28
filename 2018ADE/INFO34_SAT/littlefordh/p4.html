@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landfill</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js" ></script>
+		<link href="stylesheet.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p1.html">The Issue</a>
+		        </li>
+						<li class="nav-item">
+							<a class="nav-link" href="p2.html">Plastic bags</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p3.html">Food Waste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p4.html">Landfill</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p5.html">Solution</a>
+		        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<div id="landing">
+		<div class="landing">
+			<div class="home-wrap">
+					<div class="home-inner4">
+					</div>
+			</div>
+			</div>
+				<div class="caption center-block text-center">
+					<h3>Landfill</h3>
+					<a class="btn btn-outline-light" href="#contents">Learn more</a>
+				</div>
+	</div>
+
+	<div id="contents">
+		<div class="row padding">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-4">
+				<div class="chart-container" style="position:relative;">
+				<canvas id="Chart" class="Chart" width="400" height="350"></canvas>
+
+				<script>
+				const fCHART = document.getElementById("Chart");
+				var fChart = new Chart(fCHART, {
+					type: 'bar',
+					data: {
+							labels: ["Toxins leaching into the environment", "Damage to the water table", "Greenhouse gas", "Location", "Fire"],
+							datasets: [{
+									label: 'What problems do you associate with landfill',
+									data: [30,22,26,15,6],
+									backgroundColor: [
+											'rgba(255, 99, 132, 1)',
+											'rgba(54, 162, 235, 1)',
+											'rgba(255, 206, 86, 1)',
+											'rgba(75, 192, 192, 1)',
+											'rgba(153, 102, 255, 1)',
+									],
+
+							}]
+
+					},
+					options: {
+							scales: {
+
+									yAxes: [{
+											ticks: {
+													beginAtZero:true
+
+											}
+									}]
+
+							}
+					}
+
+				});
+
+				</script>
+
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+
+				<div class="col-md-5">
+					<h3 class="text-center mc">Issues Surrounding Landfill</h3>
+					<br> <p>The survey investigated the understanding the participants had regarding the impact of landfill on the environment.</p>
+					<p>Of those surveyed 82% were aware that landfill results in toxins leaching into the environment,
+						greenhouse waste and damage to the water table but only 42% of people had considered or investigated the
+						issues surrounding the location of landfill.</p>
+			</div>
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+
+<div id="sec">
+		<div class="row padding">
+						<div class="col-md-3">
+						</div>
+						<div class="col-md-5">
+							<strong>
+							<h3 class="mc">Motivators To Reduce Rubbish</h3>
+							<p> The participants in the survey were asked to consider what would encourage them to reduce their rubbish.</p>
+
+							<p> Those surveyed responded were motivated by: </p>
+
+								<ol>
+									<li>Paying extra for bins <img src="img/red.png" alt="">40%</li><br>
+									<li>Discount on bin rates <img src="img/purple.png" alt="">38% </li><br>
+									<li>Awareness of Issue <img src="img/blue.png" alt="">22% </li>
+								</ol>
+							</strong>
+						</div>
+						<div class="col-md-3">
+							<div class="chart-container" style="position:relative;">
+							<canvas id="doughnut2Chart" class="Chart" width="400" height="400"></canvas>
+
+							<script>
+							const doughnut2CHART = document.getElementById("doughnut2Chart");
+							var doughnut2Chart = new Chart(doughnut2CHART, {
+								type: 'pie',
+								data: {
+										datasets: [{
+												data: [21,20,12],
+												backgroundColor: [
+														'rgba(255, 00, 00, 0.8)',
+														'rgba(0, 153, 255, 0.8)',
+														'rgba(00, 00, 51, 0.8)',
+												],
+												borderWidth: 0
+
+										}],
+										labels: [
+													'Paying extra for bins',
+													'Discount on bin rates',
+													'Awareness of Issue',
+
+											]
+
+								},
+								options: {
+								}
+
+							});
+
+							</script>
+
+						</div>
+					</div>
+					<div class="col-md-1">
+					</div>
+						</div>
+					</div>
+<div id="contents">
+			<div class="row padding">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="chart-container" style="position:relative;">
+					<canvas id="doughnutChart" class="Chart" width="200" height="200"></canvas>
+
+					<script>
+					const doughnutCHART = document.getElementById("doughnutChart");
+					var doughnutChart = new Chart(doughnutCHART, {
+						type: 'doughnut',
+						data: {
+								datasets: [{
+										data: [47,41,9,3],
+										backgroundColor: [
+												'rgba(255, 00, 00, 0.8)',
+												'rgba(255, 255, 26,0.8)',
+												'rgba(0, 153, 255, 0.8)',
+												'rgba(00, 00, 51, 0.8)',
+										],
+										borderWidth: 0
+
+								}],
+								labels: [
+											'Wrappers',
+											'Food Waste',
+											'Garden Waste',
+											'Other',
+
+									]
+
+						},
+						options: {
+						}
+
+					});
+
+					</script>
+
+				</div>
+			</div>
+		<div class="col-md-1">
+		</div>
+			<div class="col-md-5">
+					<h3 class="mc">What Makes Up Most Of Your Rubbish</h3>
+					<p> The top items that are filling our rubbish bins are: </p>
+						<ol>
+							<li>Wrappers</li>
+							<li>Food Waste</li>
+							<li>Garden Waste</li>
+							<li>Other</li>
+						</ol>
+					<p> The items listed above are making up our landfill, that is getting out of hand with the quantity of rubbish going into it.</p>
+					<img class="img-responsive" src="img/bin.jpg" alt="" >
+			</div>
+			<div class="col-md-1">
+			</div>
+
+	</div>
+		</div>
+	<h3 class="text-center"><a class="btn btn-outline-dark" href="#landing">Return to Top</a></h3>
+	</body>
+</html>

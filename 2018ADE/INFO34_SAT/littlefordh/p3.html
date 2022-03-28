@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Food Waste</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js" ></script>
+		<link href="stylesheet.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p1.html">The Issue</a>
+		        </li>
+						<li class="nav-item">
+							<a class="nav-link" href="p2.html">Plastic bags</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p3.html">Food Waste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="p4.html">Landfill</a>
+						</li>
+						<li class="nav-item">
+		          <a class="nav-link" href="p5.html">Solution</a>
+		        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="landing">
+			<div class="landing">
+				<div class="home-wrap">
+					<div class="home-inner3">
+					</div>
+				</div>
+			</div>
+				<div class="caption center-block text-center">
+					<h3>Food Waste</h3>
+					<a class="btn btn-outline-light" href="#contents">Learn more</a>
+				</div>
+		</div>
+
+		<div id="contents">
+			<div class="row padding">
+
+				<div class="col-md-4 text-center">
+					<div class="chart-container" style="position:relative;">
+					<canvas id="radarChart" class="Chart" width="400" height="400"></canvas>
+
+					<script>
+					const radarCHART = document.getElementById("radarChart");
+					var radarChart = new Chart(radarCHART, {
+						type: 'radar',
+						data: {
+									labels: ['Everyday', 'Once a week', 'Twice a week', 'Three times a week', 'Four times a week','Five times a week','Six times a week'],
+									datasets: [{
+											data: [1, 19, 10, 9,3, 2, 1],
+											label: 'How often people shop for food',
+											backgroundColor: [
+													'rgba(0, 153, 255, 1)',
+											],
+											borderWidth: 0
+									}]
+							},
+						options: {
+						}
+
+					});
+
+					</script>
+
+				</div>
+			</div>
+
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<h3 class="mc">Regularity Of Food Purchasing</h3>
+				<br>
+				<p> As shown in the radar chart, 42% of those surveyed shop once a week indicating an organised approach to meal planning, potentially reducing waste from impulse buying and random purchases that do not form a structured meal plan. <br>
+					<br>The survey showed people rarely shop more than three times a week, with only 35% responding to this timeframe.<br>
+					<br>
+					The chart clearly demonstrates with the clustering of responses in the one and three times a week area that this is how many times a week the majority of those surveyed shop.
+
+				</p>
+
+
+			</div>
+			<div class="col-md-1">
+			</div>
+			</div>
+		</div>
+
+			<div id="sec">
+				<div class="row padding">
+					<div class="col-md-1">
+					</div>
+				<div class="col-md-5">
+					<h3 class="mc">Small and Large Shopping</h3>
+					<br>
+					<p>The survey showed there is a clear correlation between the size of
+						shops and the amount of rubbish that is being produced. <br>
+
+						<br>36% of people	shopping buy small quantities of food
+						and 87% of these people feel they have minimal food waste.
+						<br>
+						<br>Whereas, the 64% of people that have large shops, 35% of them feel they have greater food wastage. </p>
+						<img class="img-responsive" src="img/fc.jpg" alt="">
+				</div>
+				<div class="col-md-1">
+				</div>
+					<div class="col-md-4 text-center">
+						<div class="chart-container" style="position:relative;">
+						<canvas id="secChart" class="Chart" width="400" height="400"></canvas>
+
+						<script>
+						const secCHART = document.getElementById("secChart");
+						var secChart = new Chart(secCHART, {
+							type: 'pie',
+							data: {
+									labels: ["Large Shop", "Small Shop"],
+									datasets: [{
+											label: 'What problems do you associate with landfill',
+											data: [64,36],
+											backgroundColor: [
+
+													'rgba(255, 246, 0, 1)',
+													'rgba(40, 63, 239, 1)',
+
+											],
+											borderWidth: 2
+
+									}]
+
+							},
+							options: {
+							}
+
+						});
+
+						</script>
+
+					</div>
+				</div>
+				<div class="col-md-1">
+				</div>
+
+			</div>
+		</div>
+			<h3 class="text-center"><a class="btn btn-outline-dark" href="#landing">Return to Top</a></h3>
+	</body>
+</html>

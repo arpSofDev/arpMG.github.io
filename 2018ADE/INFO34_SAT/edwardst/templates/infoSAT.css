@@ -1,0 +1,254 @@
+
+.subheading {
+  margin-top: 50px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+.display-5 {
+  color: #3976c6;
+  font-size: 45px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+.brain {
+  float: right;
+  width: 21%;
+  margin-top: -115px;
+}
+
+
+.hypo1 {
+  width: 80%;
+  margin-left: 140px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+
+}
+.memoryimg {
+  width: 80%;
+  margin-left: 150px;
+}
+.chart {
+  height: 400px;
+  width: 40%;
+  margin-left: 850px;
+  margin-top: -250px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+canvas {
+  width: 30%;
+}
+
+
+.p1 {
+  width: 35%;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+.p2 {
+  width: 20%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: #3976c6;
+  float: right;
+  margin-right: 90px;
+  margin-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+.p3 {
+  width: 35%;
+  float: right;
+  margin-right: -700px;
+  margin-top: 30px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+
+
+.sub {
+  margin-top: 10px;
+  color: #3976c6;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+
+}
+.sub2 {
+  margin-top: 10px;
+  color: #00367f;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}
+
+
+.sherlock {
+  width: 23%;
+  float: right;
+  margin-right: 30px;
+}
+#carousel {
+  width: 50%;
+  margin-bottom: 50px;
+  margin-left: 350px;
+
+}
+.data_collection {
+    width: 48%;
+    padding-left: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: #3976c6;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-style: normal; font-variant: normal;
+
+}
+.brain_cogs {
+  float: right;
+  margin-top: 320px;
+  margin-right: 100px;
+
+}
+.survey2 {
+  float: right;
+  width: 35%;
+  margin-right: -340px;
+  margin-top: 20px;
+}
+.privacy1 {
+  float: right;
+  width: 48%;
+  margin-right: 25px;
+}
+.privacy2 {
+  float: right;
+  margin-top: 240px;
+  margin-right: -730px;
+}
+
+.brain3 {
+  margin-left: 80px;
+  width: 50%;
+}
+.toddler {
+  width: 16%;
+  float: left;
+  margin-left: 160px;
+}
+.teenager {
+  width: 20%;
+  float: inherit;
+  margin-left: 220px;
+  margin-top: 5px;
+}
+.old {
+  width: 18%;
+  float: right;
+  margin-right: 140px;
+  margin-top: 40px;
+}
+.conclusion {
+  margin-top: 20px;
+}
+.conclusion3 {
+  width: 40%;
+  text-align: left;
+  margin-top: -545px;
+  margin-left: 820px;
+}
+.conclusion2 {
+  width: 40%;
+  text-align: left;
+
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.men_women {
+  width: 90%;
+
+}
+#score {
+  width: 350px;
+}
+.toddler2{
+  margin-left: -227px;
+  margin-right: 20px;
+  margin-top: 10px;
+  float: left;
+
+}
+.teenager2 {
+  margin-right: 20px;
+  float: inherit;
+}
+.old2 {
+  margin-left: 20px;
+  margin-right: 30px;
+  float: right;
+}
+
+
+
+
+a.hideDisplay{
+  position: relative; /* This makes everything work.*/
+  /* Allows you to layer overlapping elements. */
+  z-index: 20;
+  color: #000;
+  text-decoration: none
+}
+
+a.hideDisplay:hover{
+  /* Allows you to layer overlapping elements. */
+  z-index: 30;
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none
+}
+
+/* This will only display itself when the
+ * user hovers the mouse over the anchor. */
+a.hideDisplay:hover span.showDisplayOnHover{
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+
+  /* This sets the height of a line of text in the box. */
+  line-height: 25px;
+
+  /* These position the box where it needs to go. */
+  top: 0px;
+  left: 20px;
+
+  /* These adjust the size of the box when it appears. */
+  width: 200px;
+  padding: 10px;
+
+  border: 2px solid #3976c6;
+  background-color: #c0cedd;
+
+  /* text color */
+  color: #000000;
+  text-align: left;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px;
+  font-weight: normal;
+  color: #444;
+  line-height: 18px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal; font-variant: normal;
+}

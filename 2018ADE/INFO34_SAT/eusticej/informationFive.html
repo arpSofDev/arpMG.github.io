@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Which fuels?</title>
+
+    <script src="vendors/js/chart.bundle.js"></script>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">< Back</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Start of container -->
+    <div class="container" style="padding-top: 3%;">
+
+      <h1 class="mt-4 mb-3">Which fuels?</h1>
+
+      <p>
+        Upon finding the costs of each fuel, the popularity of these fuels also became apparent.
+        These findings have impacts on average costs of fuek and driving distances constantly and cause major changes in price constantly.
+
+      </p>
+
+      <br>
+
+      <!-- Start of section one -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneOne" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneOne").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Diesel", "Petrol", "Electric"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [13, 26, 0],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+        <div class="col-md-5">
+          <h3>Fuel popularity?</h3>
+          <hr>
+          <p>
+            The graph shows that zero people surveyed use electric cars, this provides back-up for the points of them not being accessible to the public.
+            Petrol has the highest usage numbers as it tends to be the cheapest and most popular fuel for cars, especially minis that are extremly popular.
+            Diesel, while being quite expensive, had a higher number of users then I thougt it would as usually most cars are not requiring diesel and especially for short distances.
+          </p>
+        </div>
+
+      <!-- End of section one -->
+      </div>
+
+      <hr>
+
+      <!-- Start of section two -->
+      <div class="row">
+
+        <img class="img-fluid rounded" src="images/fuel.jpg" style="height: 400px;" alt="">
+
+      <!-- End of section two -->
+      </div>
+
+
+      <hr>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

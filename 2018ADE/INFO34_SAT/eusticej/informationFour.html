@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>What do we think?</title>
+
+    <script src="vendors/js/chart.bundle.js"></script>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">< Back</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Start of container -->
+    <div class="container" style="padding-top: 3%;">
+
+      <h1 class="mt-4 mb-3">What do we think?</h1>
+
+      <p>
+        Respondents were asked to provide their own opinions on electrical cars and why they arn't found on the roads very often.
+        Results provide an interesting awnser that needs to be addressed in order for Australia to start using electrical cars.
+      </p>
+
+      <br>
+
+      <!-- Start of section one -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneOne" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneOne").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Fantastic", "Good", "Alright", "I don't like them", "I hate them"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [12, 19, 8, 4, 4],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+        <div class="col-md-5">
+          <h3>What do we think of electrical cars?</h3>
+          <hr>
+          <p>
+            The results show that most people like electrical cars, however everyone who didn't like or hate them said they were also not environmentaly friendly.
+            There were 10 respondents who liked or said they were alright electrical cars and thought they were not environmentaly friendly aswell, so it can't be deemed the only deciding factor.
+          </p>
+        </div>
+
+      <!-- End of section one -->
+      </div>
+
+      <hr>
+
+      <!-- Start of section two -->
+      <div class="row">
+
+        <div class="col-md-5">
+          <h3>Why arn't these cars already on the road?</h3>
+          <hr>
+          <p>
+            Its shown through this data that respondents think electrical cars arn't accessible to the public.
+            Its interesting as Tesla and other company stores are open to sell these cars, but not everywhere and the initial expense is huge.
+            Another interesting point is no one said they were not on he road due to not being environmentaly friendly.
+          </p>
+        </div>
+
+        <div class="col-md-7">
+          <canvas id="infoOneTwo" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneTwo").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Accessible", "Efficient", "Popularity", "Environmental", "Not cool", "Unknown"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [22, 8, 7, 0, 1, 1],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+
+      <!-- End of section two -->
+      </div>
+
+
+      <hr>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

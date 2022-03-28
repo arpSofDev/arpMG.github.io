@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Who drives cars?</title>
+
+    <script src="vendors/js/chart.bundle.js"></script>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">< Back</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Start of container -->
+    <div class="container" style="padding-top: 3%;">
+
+      <h1 class="mt-4 mb-3">Who drives cars?</h1>
+
+      <p>
+        While gathering data, the first question asked was 'do you drive?'.
+        This question defined how many people my research would apply to and the percentage of people the fuel efficiency was out of.
+        Here is the data collected relating to melbournians driving:
+      </p>
+
+      <br>
+
+      <!-- Start of section one -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneOne" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneOne").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Cars", "Public Transport", "Walking"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [39, 1, 7],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+        <div class="col-md-5">
+          <h3>Which mode of transport is most popular in Melbourne?</h3>
+          <hr>
+          <p>
+            According to the results on the survey, 78.8% of respondents drive cars on a daily basis while 21.2% don't drive daily.
+            And within those who don't drive daily, +70% of them walk while just under 10% don't travel daily.
+          </p>
+        </div>
+
+      <!-- End of section one -->
+      </div>
+
+      <hr>
+
+      <!-- Start of section two -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneTwo" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneTwo").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'pie',
+              data: {
+                labels: ["Male", "Female", "X"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [34, 12, 1],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+
+        <div class="col-md-5">
+          <h3>What gender drives the most?</h3>
+          <hr>
+          <p>
+            With evidence to support, 74% of the daily driving population is male while only 23% is female and 3% is 'other'.
+            According to the 'Workplace Gender Equality Agency', the workforce is only made of 53.8% male workers so there appears no correlation between working and driving.
+            However, the construction industry is made of 88.3% of males, this means there could be a correlation between construction and driving.
+          </p>
+        </div>
+
+      <!-- End of section two -->
+      </div>
+
+
+      <hr>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

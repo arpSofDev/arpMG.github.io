@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Would you switch?</title>
+
+    <script src="vendors/js/chart.bundle.js"></script>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">< Back</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Start of container -->
+    <div class="container" style="padding-top: 3%;">
+
+      <h1 class="mt-4 mb-3">Would you switch?</h1>
+
+      <p>
+        One of the last questions asked at the end of the surveys were if they would switch to electrical cars, given the opportunity.
+      </p>
+
+      <br>
+
+      <!-- Start of section one -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneOne" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneOne").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'pie',
+              data: {
+                labels: ["Yes", "No"],
+                datasets: [{
+                  label: '# of Respondents',
+                  data: [28, 19],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+        <div class="col-md-5">
+          <h3>How many people would switch?</h3>
+          <hr>
+          <p>
+            Around 60% of the popluation would switch to electrical cars if the opportunity were to be presented, however, most who would traveled shorter distances and therefore would reap the benefits.
+            Surprisingly, the cost of fuel had no real correlation with those who would switch but related more to the fuel type since most used petrol to drive short distances.
+          </p>
+        </div>
+
+      <!-- End of section one -->
+      </div>
+
+      <hr>
+
+      <br>
+
+      <!-- Start of section two -->
+      <div class="row">
+
+        <div>
+          <h3>What benefits would be present of switching now?</h3>
+          <hr>
+          <p>
+            Since electrical cars arn't common on our roads, changing now would allow for much lower electrical costs compared to when multiple others join.
+            Not only would the cost be lower at the moment, but the cost of a cheap electrical car would also be lower then the possible future.
+            However, since its rare to see electrical cars, no fuel stations have areas to charge, meaning the car is only for short bursts of driving.
+          </p>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      <!-- End of section two -->
+      </div>
+
+
+      <hr>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Are they cost efficient?</title>
+
+    <script src="vendors/js/chart.bundle.js"></script>
+
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Start of nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">< Back</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    <!-- End of nav -->
+    </nav>
+
+    <!-- Start of container -->
+    <div class="container" style="padding-top: 3%;">
+
+      <h1 class="mt-4 mb-3">Are they cost efficient?</h1>
+
+      <p>
+        The cost efficiency of day to day cars and electric cars was difficult to calculate due to varying electric prices.
+        These prices for electricity were based of the average of electrical company plans found online while the day to day fuel prices were averaged from respondents.
+      </p>
+
+      <br>
+
+      <!-- Start of section one -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <canvas id="infoOneOne" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneOne").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Petrol", "Diesel", "Electric"],
+                datasets: [{
+                  label: '# of Money spent ($)',
+                  data: [38.48, 54.62, 28.83],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+        <div class="col-md-5">
+          <h3>Efficiency for each fuel?</h3>
+          <hr>
+          <p>
+            Statistically, petrol users save about 30% more money then diesel users, however an electrical car would cost almost 50% less to fuel the same amount.
+            Although there is only a $9.65 difference between petrol and electrical, that would save $501.80 a year if fueling once a week.
+          </p>
+        </div>
+
+      <!-- End of section one -->
+      </div>
+
+      <hr>
+
+      <!-- Start of section two -->
+      <div class="row">
+
+        <div class="col-md-5">
+          <h3>Average km?</h3>
+          <hr>
+          <p>
+            This data represents how many average km(s) people traveled per day and if 200km per week is too little.
+            Results show an average of about 300km per week, meaning 100km less then what was initially thought.
+          </p>
+        </div>
+
+        <div class="col-md-7">
+          <canvas id="infoOneTwo" width="400" height="200"></canvas>
+          <script>
+            var ctx = document.getElementById("infoOneTwo").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Diesel", "Petrol"],
+                datasets: [{
+                  label: '# of Km(s)',
+                  data: [346, 274],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero:true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </div>
+
+      <!-- End of section two -->
+      </div>
+
+
+      <hr>
+
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="py-5 bg-dark">
+
+      <div class="container">
+        <p class="m-0 text-center text-white">James Eustice, 3/4 Informatics SAT, Mentone Grammar, 2018</p>
+      </div>
+
+    <!-- End of footer -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chart test</title>
+    <link rel="stylesheet" href="chart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="chart">
+      <canvas id="myChart" width="1500" height="400">
+        <script>
+                  // For a bubble chart
+          var myBubbleChart = new Chart(ctx,{
+            type: 'bubble',
+            data: {
+                // X Value
+                x: 5,
+
+                // Y Value
+                y: 5,
+
+                // Bubble radius in pixels (not scaled).
+                r: 5
+            };
+            options: options
+          });
+
+        </script>
+      </canvas>
+    </div>
+  </body>
+</html>

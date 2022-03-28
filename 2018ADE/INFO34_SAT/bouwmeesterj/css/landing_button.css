@@ -1,0 +1,52 @@
+/* credit to Marcel Pirnay on CodePen*/
+.btn_anim {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn_anim svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn_anim svg rect {
+    stroke: #ffd633;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn_anim span{
+  background: rgb(255,0,0);
+  background: -moz-linear-gradient(left,  rgba(255,214,51,1) 0%, rgba(255,214,51,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,214,51,1) 0%,rgba(255,214,51,1) 100%);
+  background: linear-gradient(to right,  rgba(255,214,51,1) 0%,rgba(255,214,51,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd633', endColorstr='#00ff00',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn_anim:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+} 
