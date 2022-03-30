@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script>
+
+function numList() {
+
+var count = -1;
+var num = 0;
+var sum = 0;
+var avg = 0;
+
+while (num != "end")
+{
+	num = prompt("What is your number? Enter \"end\" to end.");
+	count++;
+	sum += parseInt(num);	
+}
+
+avg = sum / count;
+
+if (num == "end") 
+{
+	document.write("The number of numbers entered by the user was " + count + ". <br>");
+	document.write("The sum of the numbers entered by the user is " + sum + ". <br>");
+	document.write("The average of the numbers entered by the user is " + avg + ". <br>");
+}
+
+}
+
+</script>
+
+</head>
+
+<body onLoad="numList()">
+
+<h1>For Loops</h1>
+<p>Use while loops in JavaScript to prompt users for numbers, display the amount of numbers, the sum of the numbers, and the average of the numbers entered.</p>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Debugging</title>
+        <script>
+            function fnLoop(){
+                
+                /*This function should loop through 10 times
+                 * and state which time through the loop it is.
+                 * It will output to the 
+                 * It should go from 1st to 10th.
+                 */
+
+                var output = "";
+                var suffix = "";
+				alert(1);
+                
+                for(var i = 1; i <= 10; i++){  
+					//alert("loop " + i);
+                    switch(i){
+                       case 1: 
+                           suffix = "st";
+                           break;
+                       case 2:
+                           suffix = "nd";
+                           break;
+                       case 3:
+                           suffix = "rd";
+                           break;
+                       default:
+                           suffix = "th";
+                   } 
+                   output = "This is the " + i + suffix + " time through<br>";
+                   document.getElementById('output1').innerHTML += output; 
+                }
+				
+				alert(2);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Debugging Code</h1>
+        <p>This page contains some errors in the JavaScript code</p>
+        <p>These are deliberate in order to demonstrate different techniques for debugging code</p>
+        <button onclick="fnLoop();">Click here to start a loop</button>
+        <h2>Output will go here</h2>
+        <p id="output1"></p>
+    </body>
+</html>

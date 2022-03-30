@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Debugging using the console</title>
+
+    <script>
+        function findBugs() {
+
+            var myName = prompt("Enter your name");
+            var myEman = "";
+
+
+            var name_length = myName.length;
+
+            console.log("length = " + name_length);
+
+            for (var i = name_length; i > -1; i--) {
+
+                myEman += myName[i];
+
+                console.log("loop " + i + " letter " + myName[i]);
+            }
+
+            alert("Your name backwards is " + myEman);
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>JavaScript - Using the console to find my bugs</h1>
+    <p>This program is designed to print your name backwards</p>
+    <button onclick="findBugs();">Click to catch my bugs</button>
+</body>
+
+</html>
